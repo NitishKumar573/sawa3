@@ -1,0 +1,758 @@
+2026-07-20 09:21:08,704 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 09:21:09,340 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 09:21:09,353 [ERROR] Main loop error: 'symbol'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_12556\2321868194.py", line 24, in main
+    if symbol_info["symbol"] not in state:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'symbol'
+2026-07-20 09:21:40,219 [ERROR] Main loop error: 'symbol'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_12556\2321868194.py", line 24, in main
+    if symbol_info["symbol"] not in state:
+       ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'symbol'
+2026-07-20 09:22:16,753 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 09:22:17,362 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 09:25:23,396 [ERROR] Error processing SENSEX: 'symbol'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_12556\488252979.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_12556\836988992.py", line 3, in process_symbol
+    symbol = symbol_info["symbol"]
+             ~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'symbol'
+2026-07-20 09:33:51,890 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 09:33:52,453 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 09:33:52,459 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 09:35:25,479 [ERROR] Error processing SENSEX: 'token'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_36984\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_36984\836988992.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], symbol_info["exchange"], "TEN_MINUTE", 10 * 4)
+                                      ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+2026-07-20 09:45:14,758 [ERROR] Error processing SENSEX: 'token'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_36984\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_36984\836988992.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], symbol_info["exchange"], "TEN_MINUTE", 10 * 4)
+                                      ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'token'
+2026-07-20 09:48:05,537 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 09:48:06,219 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 09:48:06,226 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 09:55:28,854 [ERROR] Error processing SENSEX: fetch_candles() takes 4 positional arguments but 5 were given
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\836988992.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], symbol_info["exchange"], "TEN_MINUTE", 10 * 4)
+TypeError: fetch_candles() takes 4 positional arguments but 5 were given
+2026-07-20 10:02:21,346 [INFO] Bot stopped manually.
+2026-07-20 10:03:56,784 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 10:03:57,416 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 10:03:57,445 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 10:05:05,465 [ERROR] Error processing SENSEX: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\1500720368.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], "TEN_MINUTE", 10 * 4)
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\649728151.py", line 9, in fetch_candles
+    exchange_const = getattr(groww, f"EXCHANGE_{symbol_info['exchange']}", groww.EXCHANGE_NSE)
+                                                ~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2026-07-20 10:15:17,975 [INFO] Bot stopped manually.
+2026-07-20 10:15:24,822 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 10:15:25,989 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 10:15:26,009 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 10:15:26,027 [ERROR] Error processing SENSEX: fetch_candles() missing 1 required positional argument: 'lookback_minutes'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\1500720368.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], "TEN_MINUTE", 10 * 4)
+TypeError: fetch_candles() missing 1 required positional argument: 'lookback_minutes'
+2026-07-20 10:25:04,419 [ERROR] Error processing SENSEX: fetch_candles() missing 1 required positional argument: 'lookback_minutes'
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\286511920.py", line 31, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\1500720368.py", line 5, in process_symbol
+    df_10m = fetch_candles(smart_api, symbol_info["token"], "TEN_MINUTE", 10 * 4)
+TypeError: fetch_candles() missing 1 required positional argument: 'lookback_minutes'
+2026-07-20 10:26:12,473 [INFO] Bot stopped manually.
+2026-07-20 10:26:28,880 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 10:26:29,580 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 10:26:29,591 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 10:50:41,771 [INFO] Bot stopped manually.
+2026-07-20 10:51:01,744 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 10:51:03,604 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 10:51:03,630 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 10:51:03,655 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:51:34,525 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:52:15,453 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:52:46,356 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:53:17,179 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:53:48,271 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:54:19,174 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:54:50,143 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:55:21,031 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:55:51,969 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:56:32,779 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:57:03,704 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:57:34,703 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:58:05,570 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 10:58:36,426 [ERROR] Main loop error: cannot access local variable 'now' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_30044\2679609737.py", line 21, in main
+    if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
+       ^^^
+UnboundLocalError: cannot access local variable 'now' where it is not associated with a value
+2026-07-20 11:32:24,286 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 11:32:24,886 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 11:32:24,900 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 11:34:30,338 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:34:31,536 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:34:32,735 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:35:36,164 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:36:08,598 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:36:09,818 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:36:42,264 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:39:51,051 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:40:23,539 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:40:24,749 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:43:33,760 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:45:40,102 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:45:41,323 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:46:45,105 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:47:48,867 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:47:50,117 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:47:51,301 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:49:57,284 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:50:29,734 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:53:10,176 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:53:44,049 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:55:54,001 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:58:00,181 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:58:01,362 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 11:59:06,619 [ERROR] Candle fetch error (attempt 1): HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Max retries exceeded with url: /rest/secure/angelbroking/historical/v1/getCandleData (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E3077F2350>: Failed to resolve 'apiconnect.angelone.in' ([Errno 11001] getaddrinfo failed)"))
+2026-07-20 12:00:10,618 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:01:45,557 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:02:18,459 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:02:19,892 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:04:26,256 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:04:58,884 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:05:00,118 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:05:01,319 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:06:04,774 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:07:39,756 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:08:43,622 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:09:16,204 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:09:48,723 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:14:57,330 [ERROR] Candle fetch error (attempt 1): HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Max retries exceeded with url: /rest/secure/angelbroking/historical/v1/getCandleData (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E3077F2850>: Failed to resolve 'apiconnect.angelone.in' ([Errno 11001] getaddrinfo failed)"))
+2026-07-20 12:14:58,975 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:15:31,870 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:15:33,067 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:15:34,308 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:16:06,593 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:17:10,344 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:17:11,534 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:17:12,743 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:18:16,211 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:18:17,394 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:19:52,299 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:23:03,447 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:23:04,764 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:24:10,122 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:24:11,455 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:24:12,721 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:25:16,982 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:25:18,305 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:25:51,609 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:25:52,888 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:28:32,999 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 12:28:33,624 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 12:28:33,648 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 12:29:36,589 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:31:37,733 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 12:31:42,420 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 12:31:42,596 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 12:31:43,222 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:32:49,920 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:34:57,542 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:36:01,394 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:37:37,153 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:37:38,341 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:40:16,224 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:40:48,774 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:41:21,386 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:41:22,610 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:41:23,840 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:41:24,851 [WARNING] SENSEX: No candle data.
+2026-07-20 12:42:28,345 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:43:01,009 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:43:02,219 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:43:34,720 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:45:09,767 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:45:42,443 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:46:15,570 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:47:21,344 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:47:22,579 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:47:56,881 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:54:29,909 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 12:54:30,509 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 12:54:30,549 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 12:55:02,236 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:55:03,459 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:56:07,494 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:57:42,601 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:59:17,955 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 12:59:50,558 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:00:23,078 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:02:31,358 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:04:38,057 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:04:39,254 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:05:11,817 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:05:13,010 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:05:14,199 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:05:15,207 [WARNING] SENSEX: No candle data.
+2026-07-20 13:05:46,451 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:06:50,109 [INFO] Bot stopped manually.
+2026-07-20 13:08:16,232 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 13:08:17,025 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 13:08:17,079 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 13:08:17,442 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:08:18,894 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:08:51,418 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:08:52,641 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:08:54,026 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:08:55,037 [WARNING] SENSEX: No candle data.
+2026-07-20 13:09:26,050 [INFO] Bot stopped manually.
+2026-07-20 13:09:31,557 [INFO] Starting bot. DRY_RUN=False
+2026-07-20 13:09:32,478 [INFO] Logged in to Angel One SmartAPI.
+2026-07-20 13:09:32,489 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-20 13:10:04,029 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:10:36,638 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:10:37,859 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:11:41,839 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:11:43,084 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:11:44,293 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:11:45,302 [WARNING] SENSEX: No candle data.
+2026-07-20 13:12:17,535 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:13:21,429 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:13:53,925 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:14:57,898 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:14:59,158 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:15:00,377 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:15:01,391 [WARNING] SENSEX: No candle data.
+2026-07-20 13:15:32,593 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:16:05,408 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:16:06,616 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:17:10,429 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:17:11,673 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:18:16,014 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:18:18,125 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:20:57,037 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:20:58,287 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:21:31,042 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:22:35,036 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:25:13,139 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:26:48,489 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:26:49,719 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:27:53,652 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:27:54,853 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:28:58,621 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:30:02,445 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:30:03,681 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:30:04,893 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:30:05,903 [WARNING] SENSEX: No candle data.
+2026-07-20 13:31:39,719 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:31:40,918 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:31:42,114 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:31:43,121 [WARNING] SENSEX: No candle data.
+2026-07-20 13:32:14,383 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:35:23,282 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:35:24,478 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:35:25,708 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:35:26,715 [WARNING] SENSEX: No candle data.
+2026-07-20 13:38:34,800 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:39:38,547 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:40:11,068 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:41:46,107 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:43:52,489 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:43:53,703 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:47:03,780 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:47:39,632 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:48:12,337 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-20 13:48:13,535 [ERROR] Candle fetch error (attempt 2): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-22 16:17:26,813 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:17:27,290 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:17:27,294 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:17:27,598 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:17:28,825 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:17:30,057 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:17:31,283 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:17:32,288 [WARNING] ELECTWKCOM: No candle data.
+2026-07-22 16:18:03,567 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:18:04,780 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:05,993 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:07,240 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:08,245 [WARNING] ELECTWKCOM: No candle data.
+2026-07-22 16:18:39,537 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_34016\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:18:40,771 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:42,017 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:43,244 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:18:44,248 [WARNING] ELECTWKCOM: No candle data.
+2026-07-22 16:20:59,943 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:21:00,476 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:21:00,485 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:21:00,776 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:21:32,026 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:22:03,284 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3096317079.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_28568\3748772561.py", line 27, in process_symbol
+    c2=heiken_ashi.iloc[-4]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:22:34,296 [INFO] Bot stopped manually.
+2026-07-22 16:22:36,851 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:22:37,311 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:22:37,319 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:22:37,537 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:22:38,775 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:22:40,009 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:22:41,013 [WARNING] ELECTWKCOM: No candle data.
+2026-07-22 16:23:12,266 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:13,470 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:14,696 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:15,700 [WARNING] ELECTWKCOM: No candle data.
+2026-07-22 16:23:16,708 [INFO] Bot stopped manually.
+2026-07-22 16:23:19,198 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:23:19,681 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:23:19,691 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:23:19,899 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:21,133 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:22,363 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:23,368 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:23:54,603 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:55,832 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:57,047 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:23:58,050 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:24:29,293 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:24:30,527 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:24:31,753 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:24:32,756 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:25:03,768 [INFO] Bot stopped manually.
+2026-07-22 16:25:06,550 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:25:07,049 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:25:07,085 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:25:07,298 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:08,503 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:09,731 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:10,734 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:25:41,985 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:43,216 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:44,448 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:25:45,451 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:26:16,828 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:18,059 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:19,275 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:20,277 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:26:51,286 [INFO] Bot stopped manually.
+2026-07-22 16:26:53,763 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:26:54,237 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:26:54,244 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:26:54,471 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:55,696 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:56,940 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:26:57,946 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:27:29,228 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:27:30,508 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:27:31,788 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:27:32,795 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:28:04,108 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:05,383 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:06,670 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:07,675 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:28:39,229 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:40,699 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:42,115 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:28:43,121 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:29:14,386 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:15,659 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:16,940 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:17,943 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:29:49,200 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:50,426 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:51,651 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:29:52,654 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:30:23,880 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:30:25,101 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:30:26,306 [ERROR] Candle fetch error (attempt 3): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-22 16:30:27,309 [WARNING] ELECTRICITY: No candle data.
+2026-07-22 16:30:54,467 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:30:55,015 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:30:55,025 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:30:55,259 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:31:26,755 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:31:58,050 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:32:29,318 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:33:00,622 [ERROR] Candle fetch error (attempt 1): Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-07-22 16:33:01,950 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:33:33,194 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:34:04,487 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:34:35,789 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:35:07,070 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:35:38,369 [ERROR] Error processing SENSEX: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\2684474537.py", line 33, in main
+    process_symbol(smart_api, symbol_info, state)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Win11\AppData\Local\Temp\ipykernel_31680\3748772561.py", line 26, in process_symbol
+    c1=heiken_ashi.iloc[-3]
+       ~~~~~~~~~~~~~~~~^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\Win11\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2026-07-22 16:36:09,375 [INFO] Bot stopped manually.
+2026-07-22 16:36:11,366 [INFO] Starting bot. DRY_RUN=False
+2026-07-22 16:36:12,084 [INFO] Logged in to Angel One SmartAPI.
+2026-07-22 16:36:12,093 [INFO] Loaded existing state from disk (resuming after restart).
+2026-07-22 16:45:00,408 [WARNING] SENSEX: Not enough candles.
+2026-07-22 16:55:00,652 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:55:01,948 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:55:03,184 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 16:55:04,191 [WARNING] SENSEX: No candle data.
+2026-07-22 17:05:00,556 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:05:01,839 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:05:03,096 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:05:04,107 [WARNING] SENSEX: No candle data.
+2026-07-22 17:15:00,670 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:15:01,979 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:15:03,212 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:15:04,228 [WARNING] SENSEX: No candle data.
+2026-07-22 17:25:00,611 [WARNING] Candle fetch returned no data (attempt 1): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:25:01,923 [WARNING] Candle fetch returned no data (attempt 2): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:25:03,165 [WARNING] Candle fetch returned no data (attempt 3): {'status': True, 'message': 'SUCCESS', 'errorcode': '', 'data': []}
+2026-07-22 17:25:04,171 [WARNING] SENSEX: No candle data.

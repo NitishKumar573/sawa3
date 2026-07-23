@@ -1,0 +1,44 @@
+{
+  "SENSEX": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": "2026-07-22 15:15:00+05:30"
+  },
+  "RELIANCE-EQ": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": null
+  },
+  "ICICIBANK-EQ": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": null
+  },
+  "TCS-EQ": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": null
+  },
+  "ELECTWKCOM": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": null
+  },
+  "ELECTRICITY": {
+    "position": null,
+    "pending_signal": null,
+    "pending_signal_1h_close_time": null,
+    "last_processed_1h_time": null,
+    "last_processed_10m_time": null
+  }
+}
