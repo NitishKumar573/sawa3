@@ -1,0 +1,12 @@
+smartapi-python
+pyotp
+pandas
+numpy
+requests
+websocket-client
+python-telegram-bot
+ta
+schedule
+matplotlib
+streamlit
+logzero
