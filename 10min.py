@@ -50,11 +50,10 @@ log = logging.getLogger("ha_bot")
 """
 """
 
-
 WATCHLIST = [
   {
-        "symbol": "SENSEX",
-        "exchange": "BSE",
+        "symbol":"SENSEX",
+        "exchange":"BSE",
         "token":"99919000",
     }
     
