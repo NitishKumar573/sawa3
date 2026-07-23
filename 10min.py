@@ -294,7 +294,7 @@ def main():
 
     while True:
         time.sleep(2)
-        print("dsbhv")
+        
         try:
             if not market_is_open():
                 log.info("Market closed. Sleeping 5 minutes.")
