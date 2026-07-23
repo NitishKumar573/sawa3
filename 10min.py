@@ -151,6 +151,12 @@ def fetch_candles(smart_api, token, exchange, interval, lookback_minutes):
     for attempt in range(3):
         try:
             resp = smart_api.getCandleData(params)
+            print("=" * 50)
+            print("Time:", datetime.now())
+            print("Token:", token)
+            print("Exchange:", exchange)
+            print("Interval:", interval)
+            print("Params:", params)
             if resp.get("status") and resp.get("data"):
                 df = pd.DataFrame(
                     resp["data"], columns=["time", "open", "high", "low", "close", "volume"]
@@ -287,6 +293,7 @@ def main():
     
 
     while True:
+        print("dsbhv")
         try:
             if not market_is_open():
                 log.info("Market closed. Sleeping 5 minutes.")
