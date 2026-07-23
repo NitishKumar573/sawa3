@@ -9,6 +9,10 @@ import pyotp
 import requests
 from SmartApi import SmartConnect
 from zoneinfo import ZoneInfo
+import pytz
+
+print("Local:", datetime.now())
+print("IST:", datetime.now(pytz.timezone("Asia/Kolkata")))
 
 # CONFIG — fill these in
 # Groww API credentials.
