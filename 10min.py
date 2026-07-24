@@ -279,9 +279,9 @@ def main():
     state = load_state()
     last_10m_marker = None
     last_10m_marker2 =None
-    send_telegram("🤖 Algo trading bot started (Angel One SmartAPI). Watching: "
-          + ", ".join(c["symbol"] for c in WATCHLIST
-          ))
+    #send_telegram("🤖 Algo trading bot started (Angel One SmartAPI). Watching: "
+     #     + ", ".join(c["symbol"] for c in WATCHLIST
+     #     ))
     send_telegram2("🤖 Algo trading bot started (Angel One SmartAPI). Watching: "
            + ", ".join(c["symbol"] for c in WATCHLIST
            ))
