@@ -38,7 +38,7 @@ STATE_FILE = "bot_state.json"
 # already handled by the 1-Hour fetch above and would otherwise just re-read the same
 # just-closed 1H candle boundary (e.g. 9:25, 9:35, 9:45, 9:55, 10:05, 10:25, 10:35 ... — never 9:15/10:15/...).
 TEN_MIN_FETCH_MINUTES = {5,15,25,35,45,55}
-
+login_time=["9:15","14:00","12:00"]
 # LOGGINGgd
 
 logging.basicConfig(
@@ -278,6 +278,7 @@ def main():
     smart_api = login()
     state = load_state()
     last_10m_marker = None
+    last_10m_marker2 =None
     send_telegram("🤖 Algo trading bot started (Angel One SmartAPI). Watching: "
           + ", ".join(c["symbol"] for c in WATCHLIST
           ))
@@ -297,6 +298,7 @@ def main():
             #wait_for_next_candle()
             now = datetime.now(ZoneInfo("Asia/Kolkata"))
             current_hm = now.strftime("%M")
+            current_hm2 = now.strftime("%H:%M")
             if now.minute in TEN_MIN_FETCH_MINUTES and last_10m_marker != current_hm:
                 last_10m_marker = current_hm
 
@@ -314,6 +316,9 @@ def main():
     
                 save_state(state)
                 time.sleep(LOOP_SLEEP_SECONDS)
+            if current_hm2 in login_time and last_10m_marker2 != current_hm:
+                last_10m_marker2 = current_hm2
+                login()
 
         except KeyboardInterrupt:
             log.info("Bot stopped manually.")
